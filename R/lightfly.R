@@ -1,24 +1,13 @@
-# Hello, world!
-#
-# This is an example function named 'hello'
-# which prints 'Hello, world!'.
-#
-# You can learn more about package authoring with RStudio at:
-#
-#   http://r-pkgs.had.co.nz/
-#
-# Some useful keyboard shortcuts for package authoring:
-#
-#   Build and Reload Package:  'Ctrl + Shift + B'
-#   Check Package:             'Ctrl + Shift + E'
-#   Test Package:              'Ctrl + Shift + T'
 
 library("httr")
 library("jsonlite")
 library("digest")
 library("readr")
 
-## 基类
+#' A base Reference Class for finance.
+#'
+#' @field app_id app id.
+#' @field secret_key app secret key.
 Finance <- setRefClass(
   "Finance",
   fields = list(app_id="character", secret_key="character", base_url="character"),
@@ -45,6 +34,10 @@ Finance <- setRefClass(
   )
 )
 
+#' A Stock Reference Class.
+#'
+#' @field app_id app id.
+#' @field secret_key app secret key.
 Stock <- setRefClass(
   "Stock",
   contains = "Finance",
@@ -57,6 +50,11 @@ Stock <- setRefClass(
   )
 )
 
+
+#' A Fund Reference Class.
+#'
+#' @field app_id app id.
+#' @field secret_key app secret key.
 Fund <- setRefClass(
   "Fund",
   contains = "Finance",
