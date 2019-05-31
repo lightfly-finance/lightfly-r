@@ -1,7 +1,7 @@
 Package: lightfly
 Type: Package
 Title: finance data of China
-Version: 0.1.0
+Version: 0.1.1
 Author: Weinan Tang
 Maintainer: Weinan Tang <twn39@163.com>
 Description: A finance platform for China
@@ -12,7 +12,8 @@ Imports:
     digest,
     readr
 Suggests:
-    quantmod
+    quantmod,
+    testthat
 License: GPL-3
 Encoding: UTF-8
 LazyData: true

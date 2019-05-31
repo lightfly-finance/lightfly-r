@@ -26,7 +26,7 @@ Finance <- setRefClass(
       x[order(names(x))]
     },
     fetch = function (path_info, params=list()) {
-      base_url <- "http://localhost:8000"
+      base_url <<- "http://129.211.11.159"
       url <- paste(base_url, path_info, sep = "")
       r <- GET(url, add_headers('X-App-Id'=app_id, 'X-Token'=getToken(params, path_info)))
       content(r, 'text')
