@@ -13,7 +13,18 @@ A Stock Reference Class.
 \describe{
 \item{\code{app_id}}{app id.}
 
-\item{\code{secret_key}}{app secret key.}
+\item{\code{secret_key}}{app secret key.
+get HS300
+get daily history}
+
+\item{\code{symbol}}{symbol}
+
+\item{\code{date_from}}{date from}
+
+\item{\code{date_to}}{date to
+get real time stock}
+
+\item{\code{symbol}}{symbol}
 }}
 
 
