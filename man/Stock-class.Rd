@@ -17,14 +17,14 @@ A Stock Reference Class.
 get HS300
 get daily history}
 
-\item{\code{symbol}}{symbol}
+\item{\code{symbol}}{symbol.}
 
-\item{\code{date_from}}{date from}
+\item{\code{date_from}}{date from.}
 
-\item{\code{date_to}}{date to
+\item{\code{date_to}}{date to.
 get real time stock}
 
-\item{\code{symbol}}{symbol}
+\item{\code{symbol}}{symbol.}
 }}
 
 

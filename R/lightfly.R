@@ -6,6 +6,7 @@ library("readr")
 
 #' A base Reference Class for finance.
 #'
+#' @importFrom methods new
 #' @field app_id app id.
 #' @field secret_key app secret key.
 Finance <- setRefClass(
@@ -37,6 +38,7 @@ Finance <- setRefClass(
 
 #' A Stock Reference Class.
 #'
+#' @export
 #' @field app_id app id.
 #' @field secret_key app secret key.
 Stock <- setRefClass(
@@ -191,6 +193,7 @@ Stock <- setRefClass(
 
 #' A Fund Reference Class.
 #'
+#' @export
 #' @field app_id app id.
 #' @field secret_key app secret key.
 Fund <- setRefClass(
