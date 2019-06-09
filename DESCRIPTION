@@ -1,10 +1,11 @@
 Package: lightfly
 Type: Package
-Title: finance data of China
+Title: A finance platform of China
 Version: 0.1.1
+Date: 2019-06-07
 Author: Weinan Tang
 Maintainer: Weinan Tang <twn39@163.com>
-Description: A finance platform for China
+Description: A finance platform of China
 Depends: R (>= 3.1.0)
 Imports:
     httr,
