@@ -1,11 +1,12 @@
 Package: lightfly
 Type: Package
-Title: A finance platform of China
+Title: Client for Financial Data Platform of China
 Version: 0.1.3
 Date: 2019-06-07
-Author: Weinan Tang
+Authors@R: person("Weinan", "Tang", email="twn39@163.com", role = c("aut", "cre"))
 Maintainer: Weinan Tang <twn39@163.com>
-Description: A finance platform of China.
+Description: An R client for financial data platform of China, like quandl. 
+    It can fetch a lot of financial data, contains stock, fund, bond and so on.
 Depends: R (>= 3.5.0)
 Imports:
     httr,
