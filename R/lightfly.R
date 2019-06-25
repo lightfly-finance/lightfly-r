@@ -62,7 +62,8 @@ Stock <- setRefClass(
       content <- fetch(path_info, list(
         symbol = symbol,
         date_from = date_from,
-        date_to = date_to
+        date_to = date_to,
+        lang = "en"
       ))
       read_csv(content)
     },
