@@ -28,7 +28,7 @@ Finance <- setRefClass(
       x[order(names(x))]
     },
     fetch = function (path_info, params=list()) {
-      base_url <<- "http://129.211.11.159"
+      base_url <<- "http://lightfly.cn"
       url <- paste(base_url, path_info, sep = "")
       r <- GET(url, query=params, add_headers('X-App-Id'=app_id, 'X-Token'=getToken(params, path_info)))
       content(r, 'text')
@@ -57,13 +57,13 @@ Stock <- setRefClass(
     #' @field symbol symbol.
     #' @field date_from date from.
     #' @field date_to  date to.
-    daily_history = function(symbol, date_from, date_to) {
+    daily_history = function(symbol, date_from, date_to, lang="en") {
       path_info <- "/api/stock/history/daily"
       content <- fetch(path_info, list(
         symbol = symbol,
         date_from = date_from,
         date_to = date_to,
-        lang = "en"
+        lang = lang
       ))
       read_csv(content)
     },

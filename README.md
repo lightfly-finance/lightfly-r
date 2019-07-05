@@ -7,14 +7,14 @@
 打开 Rstudio 或者命令行，执行：
 
 ```
-library(lightfly, lib.loc="C:/Users/name/lightfly_x.x.x.tar.gz")
+ library(devtools)
+ install_github('lightfly-finance/lightfly-r')
 ```
 
 
 ### 使用
 
 ```r
-library(lightfly, lib.loc="C:/Users/name/lightfly_x.x.x.tar.gz")
 stock <- Stock$new(app_id="xxx", secret_key="xxx")
 data <- stock$hs300()
 ```
