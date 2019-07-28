@@ -222,7 +222,16 @@ Fund <- setRefClass(
       content <- fetch(path_info, list(
         symbol = symbol
       ))
-      fromJSON(content)
+
+      content
+    },
+    stocks_holding = function (symbol) {
+      path_info = "/api/fund/stocks/holding"
+      content <- fetch(path_info, list(
+        symbol = symbol
+      ))
+
+      read_delim(content, delim = '|')
     }
   )
 )

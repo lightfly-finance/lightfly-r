@@ -9,6 +9,8 @@
 ```
  library(devtools)
  install_github('lightfly-finance/lightfly-r')
+ library('lightfly')
+ devtools::load_all()
 ```
 
 
