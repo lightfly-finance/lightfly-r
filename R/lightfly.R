@@ -214,7 +214,7 @@ Fund <- setRefClass(
     internet_banking = function () {
       path_info = "/api/fund/internet/banking"
       content <- fetch(path_info)
-      read_csv(content)
+      readr::read_csv(content)
     },
 
     basic_info = function (symbol) {
@@ -231,7 +231,7 @@ Fund <- setRefClass(
         symbol = symbol
       ))
 
-      read_delim(content, delim = '|')
+      readr::read_delim(content, delim = '|')
     }
   )
 )
