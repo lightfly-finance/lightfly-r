@@ -1,8 +1,8 @@
 Package: lightfly
 Type: Package
 Title: Client for Financial Data Platform of China
-Version: 0.1.4
-Date: 2019-06-07
+Version: 0.1.5
+Date: 2019-09-25
 Authors@R: person("Weinan", "Tang", email="twn39@163.com", role = c("aut", "cre"))
 Maintainer: Weinan Tang <twn39@163.com>
 Description: An R client for financial data platform of China, like quandl. 
