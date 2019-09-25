@@ -20,7 +20,7 @@ Finance <- setRefClass(
       params$sign_date = Sys.Date()
       params$app_id = app_id
       query <- sort(params)
-      query_string <- toJSON(query, auto_unbox = TRUE)
+      query_string <- jsonlite::toJSON(query, auto_unbox = TRUE)
       digest::hmac(secret_key, as.character(query_string), "sha256")
 
     },
