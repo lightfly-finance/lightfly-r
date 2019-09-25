@@ -3,3 +3,4 @@
 exportClasses(Fund)
 exportClasses(Stock)
 importFrom(methods,new)
+importFrom(methods,setRefClass)
